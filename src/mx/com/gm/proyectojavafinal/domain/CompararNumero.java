@@ -1,5 +1,7 @@
 package mx.com.gm.proyectojavafinal.domain;
 
+import java.util.Scanner;
+
 public class CompararNumero {
     private int numero1;
     private int numero2;
