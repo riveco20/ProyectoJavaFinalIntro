@@ -2,97 +2,19 @@ package mx.com.gm.proyectojavafinal.implementaciondomain;
 
 import mx.com.gm.proyectojavafinal.domain.*;
 
+import java.util.Scanner;
+
 public class ImpleOpNum implements OperNumI {
 
+    public Scanner consola = new Scanner(System.in);
 
     @Override
-    public void comparaNumerosConsla(CompararNumero comparaNumero) {
-
-        CompararNumero comaparar = comparaNumero;
-        comparaNumero.comprobar();
+    public void compararNumero(CompararNumero compararNumero) {
+        CompararNumero compararNumero1 = compararNumero;
+        int numero1 = consola.nextInt();
+        int numero2 = consola.nextInt();
+        compararNumero1.compararNumeros(numero1,numero2);
 
     }
-
-    @Override
-    public void compararNumeros(CompararNumero compararNumero, int num1, int num2) {
-        CompararNumero comparar = compararNumero;
-        comparar.compararNumeros(num1,num2);
-    }
-
-    @Override
-    public void calcularRadio(AreaCirculo circulo) {
-        AreaCirculo circulo1 = circulo;
-        circulo1.calcularaArea();
-    }
-
-    @Override
-    public void calcularIva() {
-        PrecioIVA precio = new PrecioIVA();
-        double valorApagar =precio.CalcularIVA();
-        System.out.println("Precio con final: " +valorApagar);
-    }
-
-    @Override
-    public void mostrarParImpar() {
-        NumeroParImpar parImpar=new NumeroParImpar();
-        parImpar.mostarParImpar();
-    }
-
-    @Override
-    public void mostrarParImparFor() {
-        NumeroParImpar parImpar = new NumeroParImpar();
-        parImpar.numeroParImpaFor();
-    }
-
-    @Override
-    public void mayorQcero() {
-        MayorQCero mayor = new MayorQCero();
-        mayor.mayorquecero();
-    }
-
-    @Override
-    public void diasemana() {
-        DiaSemana diasemana = new DiaSemana();
-        diasemana.diasemana();
-    }
-
-    @Override
-    public void modificarLetra() {
-        RemplazarLetra letra = new RemplazarLetra();
-        String palabra =letra.remplazarcadena();
-        System.out.println(palabra);
-    }
-
-    @Override
-    public void eliminarEspacio() {
-        EliminarEspacio espacio = new EliminarEspacio();
-       String espacio2= espacio.eliminarEspacios();
-        System.out.println(espacio2);
-    }
-
-    @Override
-    public void contadorLetra() {
-        ContadorPalabra frase = new ContadorPalabra();
-        frase.tamañoYBocales();
-    }
-
-    @Override
-    public void consultarFecha() {
-      ConsutaFechaHora fecha = new ConsutaFechaHora();
-      fecha.consultarFecha();
-    }
-
-    @Override
-    public void contadorNumero() {
-        Numero2En2 num = new Numero2En2();
-        num.contador();
-    }
-
-    @Override
-    public void menu() {
-        Menu main = new Menu();
-        main.menu();
-    }
-
 
 }

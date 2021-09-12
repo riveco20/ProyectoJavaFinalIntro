@@ -42,7 +42,6 @@ public class CompararNumero {
 
             }catch(Exception e){
                 System.out.println("Ocurrio un error");
-                break;
 
             }
             System.out.println("Hasta la proxima amigo");
