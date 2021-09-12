@@ -1,9 +1,14 @@
 package mx.com.gm.proyectojavafinal.presentacion;
+import mx.com.gm.proyectojavafinal.domain.CompararNumero;
+import mx.com.gm.proyectojavafinal.implementaciondomain.ImpleOpNum;
+
 import java.util.Scanner;
 public class Presentacion {
 
         public static void main(String[] args) {
+            ImpleOpNum operNum = new ImpleOpNum();
             Scanner consola = new Scanner(System.in);
+
             int opcion = -1;
             int opcion2 = -1;
             while (opcion != 0) {
@@ -20,16 +25,20 @@ public class Presentacion {
                                 try {
                                     System.out.println("Menu principal del juego");
                                     System.out.println("Elige una opncion: \n"
-                                            + "1. Agregar Jugadores\n"
-                                            + "2. Mostrar Lista\n"
+                                            + "1. Comparar dos numeros cuales quiera\n"
+                                            + "2. Comarar numero ingresado por consola\n"
                                             + "3. Comenzar carrera\n"
                                             + "4. Ver lista de todos los jugadores\n"
                                             + "0. Atras");
                                     opcion2 = Integer.parseInt(consola.nextLine());
                                     switch (opcion2) {
                                         case 1:
+                                            CompararNumero oper1= new CompararNumero();
+                                            operNum.compararNumero(oper1,2,3);
                                             break;
                                         case 2:
+                                            CompararNumero oper2 = new CompararNumero();
+                                            operNum.comararNumeroIngresado(oper2);
                                             break;
                                         case 3:
                                             break;
