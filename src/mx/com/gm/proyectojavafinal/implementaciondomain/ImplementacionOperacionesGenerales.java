@@ -89,5 +89,11 @@ public class ImplementacionOperacionesGenerales implements OperacionesGeneralesI
         num.contador();
     }
 
+    @Override
+    public void menu() {
+        Menu main = new Menu();
+        main.menu();
+    }
+
 
 }

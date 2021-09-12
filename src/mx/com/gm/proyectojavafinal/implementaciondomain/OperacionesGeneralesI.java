@@ -16,6 +16,7 @@ public interface OperacionesGeneralesI {
     void contadorLetra();
     void consultarFecha();
     void contadorNumero();
+    void menu();
 
 
 }
