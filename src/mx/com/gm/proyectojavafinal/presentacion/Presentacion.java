@@ -1,8 +1,5 @@
 package mx.com.gm.proyectojavafinal.presentacion;
-import mx.com.gm.proyectojavafinal.domain.AreaCirculo;
-import mx.com.gm.proyectojavafinal.domain.CompararNumero;
-import mx.com.gm.proyectojavafinal.domain.NumeroParImpar;
-import mx.com.gm.proyectojavafinal.domain.PrecioIVA;
+import mx.com.gm.proyectojavafinal.domain.*;
 import mx.com.gm.proyectojavafinal.implementaciondomain.ImpleOpNum;
 
 import java.util.Scanner;
@@ -72,6 +69,7 @@ public class Presentacion {
                                             operNum.numeroParImparF(parImpar1);
                                             break;
                                         case 7:
+
                                             break;
                                         case 8:
                                             break;

@@ -9,4 +9,6 @@ public interface OperNumI {
     void precioConIVA(PrecioIVA iva);
     void numeroParImpar(NumeroParImpar numero);
     void numeroParImparF(NumeroParImpar numero);
+    void NumeroMayorQCero(MayorQCero mayor);
+
 }

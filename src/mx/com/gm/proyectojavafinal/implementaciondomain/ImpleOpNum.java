@@ -10,43 +10,53 @@ public class ImpleOpNum implements OperNumI {
 
     @Override
     public void compararNumero(CompararNumero compararNumero,int num1, int num2) {
-        CompararNumero compararNumero1 = compararNumero;
-        compararNumero1.compararNumeros(num1,num2);
+        compararNumero.setNumero1(num1);
+        compararNumero.setNumero2(num2);
+        if(num1>num2){
+            System.out.println("Los numeros son diferentes");
+            System.out.println("El numero: " + num1 + " Es mayor que el numero " + num2);
+        }
+        else if (num1<num2){
+            System.out.println("Los numeros son diferentes");
+            System.out.println("El numero: " + num1 + " Es menor que el numero " + num2);
+        }
+
+        else{
     }
 
     @Override
     public void comararNumeroIngresado(CompararNumero compararNumero) {
-        CompararNumero compararNumero1 = compararNumero;
         System.out.println("Ingrese un numero");
         int numero1=consola.nextInt();
         System.out.println("Ingrese otro numero");
         int numero2=consola.nextInt();
-        compararNumero1.compararNumeros(numero1,numero2);
+        compararNumero.compararNumeros(numero1,numero2);
     }
 
     @Override
     public void calcularAreaCirculo(AreaCirculo circulo) {
-        AreaCirculo circulo1=circulo;
-        circulo1.calcularaArea();
+        circulo.calcularaArea();
 
     }
 
     @Override
     public void precioConIVA(PrecioIVA iva) {
-        PrecioIVA iva1= new PrecioIVA();
-        iva1.CalcularIVA();
+        iva.CalcularIVA();
     }
 
     @Override
     public void numeroParImpar(NumeroParImpar numero) {
-        NumeroParImpar numero2 = new NumeroParImpar();
-        numero2.mostarParImpar();
+        numero.mostarParImpar();
     }
 
     @Override
     public void numeroParImparF(NumeroParImpar numero) {
-        NumeroParImpar numero1 =numero;
-        numero1.numeroParImpaFor();
+         numero.numeroParImpaFor();
+    }
+
+    @Override
+    public void NumeroMayorQCero(MayorQCero mayor) {
+         mayor.mayorquecero();
     }
 
 }

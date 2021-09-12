@@ -16,7 +16,7 @@ public class MayorQCero {
         do {
             System.out.println("Digite un numero mayor o igual que 0");
             numero1 = Integer.parseInt(consola.nextLine());
-        } while (numero1<=0);
+        } while (numero1>=0);
         System.out.println("El numero "+numero1+" es mayor o igual que 0");
    }
 }
