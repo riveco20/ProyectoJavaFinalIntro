@@ -8,5 +8,7 @@ public interface OperacionesGeneralesI {
     void calcularRadio(AreaCirculo circulo);
     void calcularIva();
     void mostrarParImpar();
+    void mostrarParImparFor();
+
 
 }

@@ -20,4 +20,15 @@ public class NumeroParImpar {
         }
         System.out.println("Hasta pronto");
     }
+
+    public void numeroParImpaFor(){
+        for (int i =0; i<=100;i++){
+            if(i%2==0){
+                System.out.println("Numeros Pares: " + i);
+            }
+            else {
+                System.out.println("Numeros impares: "+ i);
+            }
+             }
+    }
 }

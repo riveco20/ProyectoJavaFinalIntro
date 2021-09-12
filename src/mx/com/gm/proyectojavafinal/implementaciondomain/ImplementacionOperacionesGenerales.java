@@ -38,5 +38,11 @@ public class ImplementacionOperacionesGenerales implements OperacionesGeneralesI
         parImpar.mostarParImpar();
     }
 
+    @Override
+    public void mostrarParImparFor() {
+        NumeroParImpar parImpar = new NumeroParImpar();
+        parImpar.numeroParImpaFor();
+    }
+
 
 }
