@@ -15,6 +15,7 @@ public interface OperacionesGeneralesI {
     void eliminarEspacio();
     void contadorLetra();
     void consultarFecha();
+    void contadorNumero();
 
 
 }

@@ -83,5 +83,11 @@ public class ImplementacionOperacionesGenerales implements OperacionesGeneralesI
       fecha.consultarFecha();
     }
 
+    @Override
+    public void contadorNumero() {
+        Numero2En2 num = new Numero2En2();
+        num.contador();
+    }
+
 
 }
