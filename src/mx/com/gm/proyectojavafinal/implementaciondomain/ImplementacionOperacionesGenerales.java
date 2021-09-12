@@ -59,9 +59,9 @@ public class ImplementacionOperacionesGenerales implements OperacionesGeneralesI
 
     @Override
     public void modificarLetra() {
-        Remplazarletra letra = new Remplazarletra();
-        String frase=letra.remplazarcadena();
-        System.out.println(frase);
+        RemplazarLetra letra = new RemplazarLetra();
+        String palabra =letra.remplazarcadena();
+        System.out.println(palabra);
     }
 
     @Override
