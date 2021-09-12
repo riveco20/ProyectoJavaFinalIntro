@@ -11,6 +11,7 @@ public interface OperacionesGeneralesI {
     void mostrarParImparFor();
     void mayorQcero();
     void diasemana();
+    void modificarLetra();
 
 
 }

@@ -6,7 +6,6 @@ import mx.com.gm.proyectojavafinal.implementaciondomain.ImplementacionOperacione
 public class Test {
     public static void main(String[] args) {
         ImplementacionOperacionesGenerales numero = new ImplementacionOperacionesGenerales();
-        numero.diasemana();
-
+    numero.modificarLetra();
         }
 }

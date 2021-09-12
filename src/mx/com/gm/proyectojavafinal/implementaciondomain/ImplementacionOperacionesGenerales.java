@@ -1,5 +1,6 @@
 package mx.com.gm.proyectojavafinal.implementaciondomain;
 
+import mx.com.gm.proyectojavafinal.Remplazarletra;
 import mx.com.gm.proyectojavafinal.domain.*;
 
 public class ImplementacionOperacionesGenerales implements OperacionesGeneralesI {
@@ -54,6 +55,13 @@ public class ImplementacionOperacionesGenerales implements OperacionesGeneralesI
     public void diasemana() {
         DiaSemana diasemana = new DiaSemana();
         diasemana.diasemana();
+    }
+
+    @Override
+    public void modificarLetra() {
+        Remplazarletra letra = new Remplazarletra();
+        String frase=letra.remplazarcadena();
+        System.out.println(frase);
     }
 
 
