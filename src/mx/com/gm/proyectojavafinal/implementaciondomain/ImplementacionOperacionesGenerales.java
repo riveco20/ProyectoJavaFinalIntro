@@ -50,5 +50,11 @@ public class ImplementacionOperacionesGenerales implements OperacionesGeneralesI
         mayor.mayorquecero();
     }
 
+    @Override
+    public void diasemana() {
+        DiaSemana diasemana = new DiaSemana();
+        diasemana.diasemana();
+    }
+
 
 }

@@ -10,6 +10,7 @@ public interface OperacionesGeneralesI {
     void mostrarParImpar();
     void mostrarParImparFor();
     void mayorQcero();
+    void diasemana();
 
 
 }
