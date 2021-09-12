@@ -71,5 +71,17 @@ public class ImplementacionOperacionesGenerales implements OperacionesGeneralesI
         System.out.println(espacio2);
     }
 
+    @Override
+    public void contadorLetra() {
+        ContadorPalabra frase = new ContadorPalabra();
+        frase.tamañoYBocales();
+    }
+
+    @Override
+    public void consultarFecha() {
+      ConsutaFechaHora fecha = new ConsutaFechaHora();
+      fecha.consultarFecha();
+    }
+
 
 }

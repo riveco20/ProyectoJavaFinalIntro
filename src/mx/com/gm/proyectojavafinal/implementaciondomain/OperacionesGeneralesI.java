@@ -13,6 +13,8 @@ public interface OperacionesGeneralesI {
     void diasemana();
     void modificarLetra();
     void eliminarEspacio();
+    void contadorLetra();
+    void consultarFecha();
 
 
 }
