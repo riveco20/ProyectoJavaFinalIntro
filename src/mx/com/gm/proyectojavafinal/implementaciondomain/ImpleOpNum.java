@@ -24,4 +24,11 @@ public class ImpleOpNum implements OperNumI {
         compararNumero1.compararNumeros(numero1,numero2);
     }
 
+    @Override
+    public void calcularAreaCirculo(AreaCirculo circulo) {
+        AreaCirculo circulo1=circulo;
+        circulo1.calcularaArea();
+
+    }
+
 }

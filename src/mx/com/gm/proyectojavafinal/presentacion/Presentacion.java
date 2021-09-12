@@ -1,4 +1,5 @@
 package mx.com.gm.proyectojavafinal.presentacion;
+import mx.com.gm.proyectojavafinal.domain.AreaCirculo;
 import mx.com.gm.proyectojavafinal.domain.CompararNumero;
 import mx.com.gm.proyectojavafinal.implementaciondomain.ImpleOpNum;
 
@@ -13,21 +14,19 @@ public class Presentacion {
             int opcion2 = -1;
             while (opcion != 0) {
                 try {
-
                     System.out.println("Elige una opncion: \n"
-                            + "1. Comenzar juego\n"
+                            + "1. Comenzar \n"
                             + "0. Salir");
                     opcion = Integer.parseInt(consola.nextLine());
-
                     switch (opcion) {
                         case 1:
                             while (opcion2 != 0) {
                                 try {
-                                    System.out.println("Menu principal del juego");
+                                    System.out.println("Menu principal");
                                     System.out.println("Elige una opncion: \n"
                                             + "1. Comparar dos numeros cuales quiera\n"
                                             + "2. Comarar numero ingresado por consola\n"
-                                            + "3. Comenzar carrera\n"
+                                            + "3. Calcular area de un circulo\n"
                                             + "4. Ver lista de todos los jugadores\n"
                                             + "0. Atras");
                                     opcion2 = Integer.parseInt(consola.nextLine());
@@ -41,6 +40,8 @@ public class Presentacion {
                                             operNum.comararNumeroIngresado(oper2);
                                             break;
                                         case 3:
+                                            AreaCirculo circulo = new AreaCirculo();
+                                            circulo.calcularaArea();
                                             break;
                                         case 4:
                                             break;
