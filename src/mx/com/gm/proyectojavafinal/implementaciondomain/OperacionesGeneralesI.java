@@ -6,6 +6,7 @@ public interface OperacionesGeneralesI {
     void comparaNumerosConsla(CompararNumero comparaNumero);
     void compararNumeros(CompararNumero compararNumero, int num1, int num2);
     void calcularRadio(AreaCirculo circulo);
-    void CalcularIva();
+    void calcularIva();
+    void mostrarParImpar();
 
 }

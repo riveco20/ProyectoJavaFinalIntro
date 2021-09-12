@@ -26,12 +26,17 @@ public class ImplementacionOperacionesGenerales implements OperacionesGeneralesI
     }
 
     @Override
-    public void CalcularIva() {
+    public void calcularIva() {
         PrecioIVA precio = new PrecioIVA();
         double valorApagar =precio.CalcularIVA();
         System.out.println("Precio con final: " +valorApagar);
     }
 
+    @Override
+    public void mostrarParImpar() {
+        NumeroParImpar parImpar=new NumeroParImpar();
+        parImpar.mostarParImpar();
+    }
 
 
 }
