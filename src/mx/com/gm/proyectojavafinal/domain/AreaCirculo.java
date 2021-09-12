@@ -13,8 +13,8 @@ public class AreaCirculo {
         Scanner consola = new Scanner(System.in);
 
         System.out.println("Ingresa el radio");
-        double radio = Double.parseDouble(consola.nextLine());
 try {
+    double radio = Double.parseDouble(consola.nextLine());
     if (radio >= 0) {
         double area = Math.PI * (Math.pow(radio, 2));
         System.out.println(area);

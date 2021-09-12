@@ -31,4 +31,22 @@ public class ImpleOpNum implements OperNumI {
 
     }
 
+    @Override
+    public void precioConIVA(PrecioIVA iva) {
+        PrecioIVA iva1= new PrecioIVA();
+        iva1.CalcularIVA();
+    }
+
+    @Override
+    public void numeroParImpar(NumeroParImpar numero) {
+        NumeroParImpar numero2 = new NumeroParImpar();
+        numero2.mostarParImpar();
+    }
+
+    @Override
+    public void numeroParImparF(NumeroParImpar numero) {
+        NumeroParImpar numero1 =numero;
+        numero1.numeroParImpaFor();
+    }
+
 }
