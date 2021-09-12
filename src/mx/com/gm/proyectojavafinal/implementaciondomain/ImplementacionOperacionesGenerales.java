@@ -64,5 +64,12 @@ public class ImplementacionOperacionesGenerales implements OperacionesGeneralesI
         System.out.println(frase);
     }
 
+    @Override
+    public void eliminarEspacio() {
+        EliminarEspacio espacio = new EliminarEspacio();
+       String espacio2= espacio.eliminarEspacios();
+        System.out.println(espacio2);
+    }
+
 
 }

@@ -12,6 +12,7 @@ public interface OperacionesGeneralesI {
     void mayorQcero();
     void diasemana();
     void modificarLetra();
+    void eliminarEspacio();
 
 
 }
