@@ -9,6 +9,7 @@ public interface OperacionesGeneralesI {
     void calcularIva();
     void mostrarParImpar();
     void mostrarParImparFor();
+    void mayorQcero();
 
 
 }

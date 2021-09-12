@@ -44,5 +44,11 @@ public class ImplementacionOperacionesGenerales implements OperacionesGeneralesI
         parImpar.numeroParImpaFor();
     }
 
+    @Override
+    public void mayorQcero() {
+        MayorQCero mayor = new MayorQCero();
+        mayor.mayorquecero();
+    }
+
 
 }
