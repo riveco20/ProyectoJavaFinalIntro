@@ -45,31 +45,25 @@ public class Presentacion {
                                     opcion2 = Integer.parseInt(consola.nextLine());
                                     switch (opcion2) {
                                         case 1:
-                                            CompararNumero oper1= new CompararNumero();
-                                            operNum.compararNumero(oper1,2,3);
+                                            operNum.compararNumero(2,3);
                                             break;
                                         case 2:
-                                            CompararNumero oper2 = new CompararNumero();
-                                            operNum.comararNumeroIngresado(oper2);
+                                            operNum.comapararNumero();
                                             break;
                                         case 3:
-                                            AreaCirculo circulo = new AreaCirculo();
-                                            operNum.calcularAreaCirculo(circulo);
+                                            operNum.calcularAreaC();
                                             break;
                                         case 4:
-                                            PrecioIVA iva = new PrecioIVA();
-                                            operNum.precioConIVA(iva);
+                                            operNum.calcularIva();
                                             break;
                                         case 5:
-                                            NumeroParImpar parImpar = new NumeroParImpar();
-                                            operNum.numeroParImpar(parImpar);
+                                            operNum.numeroPar();
                                             break;
                                         case 6:
-                                            NumeroParImpar parImpar1= new NumeroParImpar();
-                                            operNum.numeroParImparF(parImpar1);
+                                            operNum.numeroparFor();
                                             break;
                                         case 7:
-
+                                            operNum.mayorQcero();
                                             break;
                                         case 8:
                                             break;
@@ -82,8 +76,10 @@ public class Presentacion {
                                         case 12:
                                             break;
                                         case 13:
+                                            operNum.consultarfecha();
                                             break;
                                         case 14:
+                                            operNum.aumento2En2();
                                             break;
                                         case 15:
                                             break;

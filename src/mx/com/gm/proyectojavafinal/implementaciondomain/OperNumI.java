@@ -3,12 +3,15 @@ import mx.com.gm.proyectojavafinal.domain.*;
 
 public interface OperNumI {
 
-    void compararNumero(CompararNumero compararNumero,int num1,int num2);
-    void comararNumeroIngresado(CompararNumero compararNumero);
-    void calcularAreaCirculo(AreaCirculo circulo);
-    void precioConIVA(PrecioIVA iva);
-    void numeroParImpar(NumeroParImpar numero);
-    void numeroParImparF(NumeroParImpar numero);
-    void NumeroMayorQCero(MayorQCero mayor);
+    void compararNumero(int num1,int num2);
+    void comapararNumero();
+    void numeroPar();
+    void numeroparFor();
+    void aumento2En2();
+    void calcularAreaC();
+    void calcularIva();
+    void mayorQcero();
+    void consultarfecha();
+
 
 }

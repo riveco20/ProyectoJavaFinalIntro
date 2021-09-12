@@ -1,12 +1,0 @@
-
-—
-java:S1186	"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(°—Ê¢
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ŒòŠüÿÿÿÿ
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ËÈ†Û8ı²ğÛ½/
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ŒòŠüÿÿÿÿ8³ğÛ½/
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(áó¿òıÿÿÿÿ8œ³ğÛ½/
-U	java:S106"9Replace this use of System.out or System.err by a logger.(îµ †8œ³ğÛ½/
-7
-java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ
-I
-java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ
