@@ -10,7 +10,8 @@ public class CompararNumero {
     }
 
     public void compararNumeros(int numero1, int numero2){
-
+        this.numero1=numero1;
+        this.numero2=numero2;
         if(numero1>numero2){
             System.out.println("Los numeros son diferentes");
             System.out.println("El numero: " + numero1 + " Es mayor que el numero " + numero2);
@@ -25,29 +26,6 @@ public class CompararNumero {
             System.out.println("Los numeros son iguales");
         }
     };
-
-    public void comprobar(){
-
-        Scanner consola = new Scanner(System.in);
-        int opcion=1;
-        while(opcion!=0){
-            try{
-                System.out.println("Ingresa un numero");
-                int numero1= consola.nextInt();
-                System.out.println("Ingresa otro numero");
-                int numero2= consola.nextInt();
-                this.compararNumeros(numero1, numero2);
-                System.out.println("Deseas salir");
-                opcion= consola.nextInt();
-
-            }catch(Exception e){
-                System.out.println("Ocurrio un error");
-
-            }
-            System.out.println("Hasta la proxima amigo");
-        }
-
-    }
     public int getNumero1() {
         return this.numero1;
     }
