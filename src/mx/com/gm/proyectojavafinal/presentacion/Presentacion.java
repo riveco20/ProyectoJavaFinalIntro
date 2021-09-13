@@ -1,12 +1,14 @@
 package mx.com.gm.proyectojavafinal.presentacion;
 import mx.com.gm.proyectojavafinal.domain.*;
 import mx.com.gm.proyectojavafinal.implementaciondomain.ImpleOpNum;
+import mx.com.gm.proyectojavafinal.implementaciondomain.ImpleOpStr;
 
 import java.util.Scanner;
 public class Presentacion {
 
         public static void main(String[] args) {
             ImpleOpNum operNum = new ImpleOpNum();
+            ImpleOpStr operStr = new ImpleOpStr();
             Scanner consola = new Scanner(System.in);
 
             int opcion = -1;
@@ -72,6 +74,7 @@ public class Presentacion {
                                         case 10:
                                             break;
                                         case 11:
+                                            operStr.contadorLetra();
                                             break;
                                         case 12:
                                             break;

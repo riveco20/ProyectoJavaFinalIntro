@@ -2,9 +2,9 @@ package mx.com.gm.proyectojavafinal.domain;
 
 import java.util.*;
 
-public class ContadorPalabra {
+public class ContadorLetra {
 
-    public ContadorPalabra() {
+    public ContadorLetra() {
 
     }
 

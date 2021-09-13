@@ -11,8 +11,8 @@ public class DiaSemana {
     public void diasemana(){
         Scanner consola = new Scanner(System.in);
         System.out.println("Digite el dia de la semana ");
-        var dia = consola.nextLine();
-
+        String diaEscrito = consola.nextLine();
+        String dia=diaEscrito;
         switch (dia){
 
             case "lunes":{
