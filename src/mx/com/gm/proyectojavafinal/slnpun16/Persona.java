@@ -1,5 +1,6 @@
 package mx.com.gm.proyectojavafinal.slnpun16;
 import java.security.PrivilegedAction;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Persona {
@@ -64,10 +65,41 @@ public class Persona {
         }
     }
 
-    protected void generaDNI(){
+    protected String generaDNI(int Dni){
+        final String DNI="ABCDEFGH";
+        String numeroRandom=this.numeroAletatorio();
+        String letraSt="";
+        if(Dni==0){
+        int numeroConvertido =Integer.parseInt(numeroRandom);
+        int oper=numeroConvertido%9;
+        char letra = DNI.charAt(oper);
+        letraSt=String.valueOf(letra);
+        }
+        if(Dni>10000000 && Dni<=99999999) {
+            int oper=Dni%9;
+            char letra = DNI.charAt(oper);
+            letraSt=String.valueOf(letra);
 
+        }
+        else if(Dni>0 && Dni<=9999999) {
+            numeroRandom = String.valueOf(Dni);
+            System.out.println("El numero debe de ser de 8 cifras");
+            letraSt="Numero no valido";
+        }
+        return numeroRandom+letraSt;
     }
 
+    public String numeroAletatorio(){
+        String numeroRandom = "";
+        int contador =0;
+        while (contador<8){
+            int numeroAle = (int) Math.floor(Math.random()*((9+1)+0));
+            String numeroCaracter = String.valueOf(numeroAle);
+            numeroRandom +=numeroCaracter;
+            contador+=1;
+        }
+        return numeroRandom;
+    }
     public String getNombre() {
         return this.nombre;
     }
@@ -121,4 +153,17 @@ public class Persona {
                 ", altura=" + altura +
                 '}';
     }
+
+    public static void main(String[] args) {
+
+        Persona persona = new Persona();
+       String numeroA= persona.numeroAletatorio();
+        System.out.println(numeroA);
+       String numeroDNI = persona.generaDNI(0);
+        System.out.println(numeroDNI);
+        String numeroDNI2 = persona.generaDNI(12456789);
+        System.out.println(numeroDNI2);
+        String numeroDNI3 = persona.generaDNI(1);
+        System.out.println(numeroDNI3);
+           }
 }

@@ -1,0 +1,8 @@
+
+7
+java:S1170	"!Make this final field static too.(±Å¬«
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öğÒìıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(öôâ¸ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(êË‹Ûøÿÿÿÿ
+`
+java:S1128"DRemove this unused import 'javax.lang.model.element.PackageElement'.(úÊöf8ºúÃÚ½/
