@@ -5,8 +5,6 @@ f
 6src/mx/com/gm/proyectojavafinal/domain/MayorQCero.java,f\1\f12fc2edfd69cd4142465d7eb271e6b889eba2a2
 e
 5src/mx/com/gm/proyectojavafinal/domain/PrecioIVA.java,b\c\bcc417b5922a7412b700206fd6a7bc77bd8147b6
-g
-7src/mx/com/gm/proyectojavafinal/domain/AreaCirculo.java,f\a\fa56d3ec3ce085c0c631dfbc797d423117795c31
 j
 :src/mx/com/gm/proyectojavafinal/domain/OperacionesNum.java,0\4\046eeb2df58a44cb1dd7d7ab29dd88a25e75a6aa
 j
