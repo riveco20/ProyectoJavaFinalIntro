@@ -10,8 +10,8 @@ public class CompararNumero {
     }
 
     public void compararNumeros(int numero1, int numero2){
-        this.numero1=numero1;
-        this.numero2=numero2;
+        this.setNumero1(numero1);
+        this.setNumero2(numero2);
         if(numero1>numero2){
             System.out.println("Los numeros son diferentes");
             System.out.println("El numero: " + numero1 + " Es mayor que el numero " + numero2);

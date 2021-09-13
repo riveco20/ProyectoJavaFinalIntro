@@ -35,7 +35,7 @@ public class Presentacion {
                                         + "7. Comprobar numero mayor que cero\n"
                                         + "8. Dia laboral de la semana\n"
                                         + "9. Modificar frase y agregar\n"
-                                        + "10. Eliminando espacop de una frease\n"
+                                        + "10. Eliminar los espacio de una frease\n"
                                         + "11. Contador de vocales\n"
                                         + "12. Comparar palabras\n"
                                         + "13. Consultar fecha\n"

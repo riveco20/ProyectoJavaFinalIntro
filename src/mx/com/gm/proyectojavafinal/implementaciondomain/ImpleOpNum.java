@@ -16,11 +16,18 @@ public class ImpleOpNum implements OperNumI {
     @Override
     public void comapararNumero() {
         Scanner consola = new Scanner(System.in);
-        int numero1 = consola.nextInt();
-        int numero2= consola.nextInt();
         CompararNumero numero = new CompararNumero();
-        numero.compararNumeros(numero1,numero2);
-    }
+        try{
+            System.out.println("Ingrese un numero");
+            int numero1 = consola.nextInt();
+            System.out.println("Ingrese otro numero");
+            int numero2= consola.nextInt();
+            numero.compararNumeros(numero1,numero2);
+
+        }catch (Exception e){
+            System.out.println("Error al ingresar datos");
+        }
+  }
 
     @Override
     public void numeroPar() {
@@ -51,7 +58,8 @@ public class ImpleOpNum implements OperNumI {
     @Override
     public void calcularIva() {
         PrecioIVA iva = new PrecioIVA();
-        iva.CalcularIVA();
+        double precioIva=iva.CalcularIVA();
+        System.out.println("Precion con iva incluido:  " + precioIva);
     }
 
     @Override

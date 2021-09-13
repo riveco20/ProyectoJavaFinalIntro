@@ -14,26 +14,34 @@ public class RemplazarLetra {
     public String remplazarcadena(){
         Scanner consola = new Scanner(System.in);
         System.out.println("Ingres una frase por favor");
-        String fraseIngresada=consola.nextLine();
         String fraseTransformada ="";
-        for (char c : frase.toCharArray()) {
-            if(c=='a'){
-                list.add('e');
+        String fraseIngresada=" ";
+       try{
+            fraseIngresada=consola.nextLine();
+          if(fraseIngresada.matches("[+-]?\\d*(\\.\\d+)?")){
+               for (char c : frase.toCharArray()) {
+               if(c=='a'){
+                   list.add('e');
+               }
+               else if (c!='a'){
+                   list.add(c);
+               }
+
+           }
+
+               for (int i =0; i<list.size();i++){
+                   String caracter =String.valueOf(list.get(i));
+                   fraseTransformada +=caracter;
+
+               }
             }
-            else if (c!='a'){
-                list.add(c);
-            }
-
+           else {
+               System.out.println("Debe ser una frase");
+           }
+       }catch (Exception ex){
+            System.out.println("Ocurrio un error");
         }
-
-        for (int i =0; i<list.size();i++){
-                String caracter =String.valueOf(list.get(i));
-                fraseTransformada +=caracter;
-
-        }
-        System.out.println(list);
-        System.out.println(fraseTransformada);
-        return fraseTransformada.concat(fraseIngresada);
+        return fraseTransformada.concat(" "+fraseIngresada);
     }
 
 

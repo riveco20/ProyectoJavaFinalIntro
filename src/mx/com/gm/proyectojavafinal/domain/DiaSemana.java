@@ -14,8 +14,9 @@ public class DiaSemana {
         try {
             String diaEscrito = consola.nextLine();
 
-            diaEscrito.toLowerCase();
-            switch (diaEscrito) {
+           String diaSemana= diaEscrito.toLowerCase();
+
+            switch (diaSemana) {
                 case "lunes": {
                     System.out.println("Si es un dia laboral");
                     break;

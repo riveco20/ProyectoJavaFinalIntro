@@ -2,7 +2,7 @@ package mx.com.gm.proyectojavafinal.implementaciondomain;
 
 import mx.com.gm.proyectojavafinal.domain.*;
 
-public class ImpleOpStr implements OperStr{
+public class ImpleOpStr implements OperStr {
 
     @Override
     public void contadorLetra() {
@@ -19,7 +19,8 @@ public class ImpleOpStr implements OperStr{
     @Override
     public void cambiarLetra() {
         RemplazarLetra remplazarLetra = new RemplazarLetra();
-        remplazarLetra.remplazarcadena();
+        String nuevaPalabra = remplazarLetra.remplazarcadena();
+        System.out.println(nuevaPalabra);
     }
 
     @Override

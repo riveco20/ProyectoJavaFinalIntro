@@ -20,7 +20,7 @@ public class PrecioIVA {
     public double CalcularIVA() {
         Scanner consola = new Scanner(System.in);
         System.out.println("Ingresar el precio sin iva");
-        double precioIva=0;
+        double precioIva = 0;
         try {
             this.precio = Double.parseDouble(consola.nextLine());
             double calculoIva = (precio * this.iva) / 100d;
@@ -31,7 +31,6 @@ public class PrecioIVA {
         return precioIva;
 
     }
-
 
 
     public double getPrecio() {
