@@ -2,6 +2,8 @@ package mx.com.gm.proyectojavafinal.presentacion;
 
 import mx.com.gm.proyectojavafinal.implementaciondomain.ImpleOpNum;
 import mx.com.gm.proyectojavafinal.implementaciondomain.ImpleOpStr;
+import mx.com.gm.proyectojavafinal.implementaciondomain.ImpleProble;
+import mx.com.gm.proyectojavafinal.implementaciondomain.ProblemasI;
 
 import java.util.Scanner;
 
@@ -11,8 +13,8 @@ public class Presentacion {
         ImpleOpNum operNum = new ImpleOpNum();
         ImpleOpStr operStr = new ImpleOpStr();
         Scanner consola = new Scanner(System.in);
-
-        int opcion = -1;
+        ImpleProble impleProble = new ImpleProble();
+                int opcion = -1;
         int opcion2 = -1;
         while (opcion != 0) {
             try {
@@ -93,6 +95,7 @@ public class Presentacion {
                                         operStr.menu();
                                         break;
                                     case 16:
+                                        impleProble.solucionPunto16();
                                         break;
                                     case 17:
                                         break;

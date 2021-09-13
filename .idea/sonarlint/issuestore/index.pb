@@ -21,5 +21,3 @@ j
 :src/mx/com/gm/proyectojavafinal/domain/CompararNumero.java,c\d\cdeac797077c58e78fde91e3366e960fdd5481af
 f
 6src/mx/com/gm/proyectojavafinal/domain/MayorQCero.java,f\1\f12fc2edfd69cd4142465d7eb271e6b889eba2a2
-e
-5src/mx/com/gm/proyectojavafinal/domain/DiaSemana.java,8\4\8449438955a703b9e9d0fc6c21a8a829845a7eff

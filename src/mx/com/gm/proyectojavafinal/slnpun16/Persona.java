@@ -21,39 +21,39 @@ public class Persona {
         this.sexo = sexo;
     }
 
-    public Persona(String nombre, int edad, String DNI, char sexo, double peso, double altura) {
+    public Persona(String nombre, int edad,char sexo, double peso, double altura) {
         this.nombre = nombre;
         this.edad = edad;
-        this.DNI = DNI;
         this.sexo = sexo;
         this.peso = peso;
         this.altura = altura;
     }
 
-    public int calcularIMC(){
-        double calculoIMC=(this.peso/Math.pow(this.altura,2));
-        int numero=0;
+    public String calcularIMC(){
+        double alturaMetro = this.altura/100;
+        double calculoIMC=(this.peso/Math.pow(alturaMetro,2));
+        String numero="";
         if(calculoIMC<20){
-            numero=-1;
+            numero = String.valueOf(-1) + " Estas en tu peso ideal";
         }
         else if(calculoIMC>=20 && calculoIMC<=25){
-            numero=0;
+            numero= String.valueOf(0) +" Esta por debajo de tu peso ideal";
         }
         else {
-            numero=1;
+            numero=String.valueOf(1) +" Estas sobre tu peso ideal";
         }
 
         return numero;
     }
 
-    public boolean esMayorEdad(){
-        boolean respues=true;
-        if(this.edad>17){
-            respues=true;
+    public String esMayorEdad(){
+        String respues=" ";
+         if(this.edad>17){
+             respues="Eres mayor de edad";
 
         }
         else {
-            respues=false;
+            respues="Eres menor de edad";
         }
 
         return respues;
@@ -86,6 +86,7 @@ public class Persona {
             System.out.println("El numero debe de ser de 8 cifras");
             letraSt="Numero no valido";
         }
+        this.DNI=numeroRandom+letraSt;
         return numeroRandom+letraSt;
     }
 
@@ -155,15 +156,8 @@ public class Persona {
     }
 
     public static void main(String[] args) {
+        double calculoIMC=(90/Math.pow(1.70,2));
+        System.out.println(calculoIMC);
+    }
 
-        Persona persona = new Persona();
-       String numeroA= persona.numeroAletatorio();
-        System.out.println(numeroA);
-       String numeroDNI = persona.generaDNI(0);
-        System.out.println(numeroDNI);
-        String numeroDNI2 = persona.generaDNI(12456789);
-        System.out.println(numeroDNI2);
-        String numeroDNI3 = persona.generaDNI(1);
-        System.out.println(numeroDNI3);
-           }
 }
