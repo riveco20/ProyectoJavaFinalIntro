@@ -1,8 +1,6 @@
 package mx.com.gm.proyectojavafinal.implementaciondomain;
 
-import mx.com.gm.proyectojavafinal.domain.CompararNumero;
-import mx.com.gm.proyectojavafinal.domain.ContadorLetra;
-import mx.com.gm.proyectojavafinal.domain.DiaSemana;
+import mx.com.gm.proyectojavafinal.domain.*;
 
 public class ImpleOpStr implements OperStr{
 
@@ -17,4 +15,29 @@ public class ImpleOpStr implements OperStr{
         DiaSemana dia = new DiaSemana();
         dia.diasemana();
     }
+
+    @Override
+    public void cambiarLetra() {
+        RemplazarLetra remplazarLetra = new RemplazarLetra();
+        remplazarLetra.remplazarcadena();
+    }
+
+    @Override
+    public void menu() {
+        Menu menu = new Menu();
+        menu.menu();
+    }
+
+    @Override
+    public void eliminarespacio() {
+        EliminarEspacio eliminarespacio = new EliminarEspacio();
+        eliminarespacio.eliminarEspacios();
+    }
+
+    @Override
+    public void compararPalabra() {
+        ComparaPalabra comparaPalabra = new ComparaPalabra();
+        comparaPalabra.compararPalabras();
+    }
+
 }

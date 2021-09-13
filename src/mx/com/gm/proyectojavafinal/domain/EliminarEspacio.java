@@ -7,18 +7,25 @@ public class EliminarEspacio {
 
     }
 
-    public String eliminarEspacios(){
+    public String eliminarEspacios() {
         Scanner consola = new Scanner(System.in);
         System.out.println("Ingresa una frase");
         String frase = consola.nextLine();
-        String nuevaFrase = frase.replace(" ","");
-        return nuevaFrase ;
-    }
+        String fraseSinEspacios = "";
+        for (int i = 0; i < frase.length(); i++) {
+            if (frase.charAt(i) != ' ') {
+                String caracter = String.valueOf(frase.charAt(i));
+                fraseSinEspacios += caracter;
+            }
+        }
+
+            System.out.println(fraseSinEspacios);
+            return fraseSinEspacios;
+        }
 
     public static void main(String[] args) {
-        EliminarEspacio frase = new EliminarEspacio();
-        String fraseNueva= frase.eliminarEspacios();
-        System.out.println(fraseNueva);
+        EliminarEspacio eliminarespacio = new EliminarEspacio();
+        eliminarespacio.eliminarEspacios();
+    }
     }
 
-}
